@@ -53,4 +53,12 @@ bot.on('ready', () => {
   });
 });
 
+bot.on('message', function() {
+    if (message.content === "$loop") { 
+      var interval = setInterval (function () {
+        bot.sendMessage(message.channel, "**Hi its me LiquidBot want to invite me to your discord here's** __**the link**__ https://discordapp.com/api/oauth2/authorize?client_id=412014940472213505&scope=bot&permissions=0")
+      }, 1 * 3600); 
+    }
+});
+
 bot.login(process.env.BOT_TOKEN);
