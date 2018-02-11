@@ -56,7 +56,6 @@ bot.on('ready', () => {
 bot.on("message", function(message) { // when a message is sent
     if (message.author.equals(bot.user)) return; // if the message is sent by a bot, ignore
 
-    var command = args[0].toLowerCase(); // sets the command to lowercase (making it incase sensitive)
     var mutedrole = message.guild.roles.find("name", "muted");
 
     if (command == "mute") { // creates the command mute
