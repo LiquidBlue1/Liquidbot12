@@ -15,6 +15,13 @@ const bot = new Discord.Client();
 const token = 'NDEyMDE0OTQwNDcyMjEzNTA1.DWHA7Q.d-doYSAPbJYyT6K1PGwe5VPvd10';
 
 bot.on('ready', () => {
+  console.log('Stats is Ready!');
+  bot.setStatus('Online');
+  bot.setGame('GAME HERE');
+  
+});
+
+bot.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
   bot.on('message', message => {
     if (message.content == CLEAR_MESSAGES) {
@@ -51,11 +58,6 @@ bot.on('ready', () => {
       }
     }
   });
-});
-bot.on('ready', () => {
-  bot.setStatus('Online');
-  bot.setGame('GAME HERE');
-  
 });
 
 bot.login(process.env.BOT_TOKEN);
