@@ -25,6 +25,12 @@ bot.on('message', message => {
     message.channel.sendMessage('pong');
   }
 });
+bot.on('ready', () => {
+  console.log('Stats is Ready!');
+  bot.setStatus('Online');
+  bot.setGame('GAME HERE');
+  
+});
 
 // log our bot in
 bot.login(token);
