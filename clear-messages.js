@@ -53,8 +53,9 @@ bot.on('ready', () => {
   });
 });
 bot.on('ready', () => {
-  bot.setStatus('Online')
-  bot.setGame('GAME HERE')
+  bot.setStatus('Online');
+  bot.setGame('GAME HERE');
+  
 });
 
 bot.login(process.env.BOT_TOKEN);
