@@ -64,7 +64,7 @@ let time - parans[1];
 if(!time) return msg.reply("please specify an amount of time for mute for!");
 
 member.addRole(muteRole.id);
-msg.channel.send("you've been muted for $(ms(ms(time), {long: true})} ${member.user.tag}');
+msg.channel.send('you've been muted for $(ms(ms(time), {long: true})} ${member.user.tag}');
                  
 setTimeout(function() {
     member.removeRole(mute.id);
