@@ -61,8 +61,6 @@ bot.on("message", function(message) { // when a message is sent
     var args = message.content.substring(PREFIX.length).split(" "); // removes the prefix from the message
     var command = args[0].toLowerCase(); // sets the command to lowercase (making it incase sensitive)
     var mutedrole = message.guild.roles.find("name", "muted");
-  
-}
 
     if (command == "mute") { // creates the command mute
         if (!message.member.roles.some(r=>["bot-admin"].includes(r.name)) ) return message.reply("Sorry, you do not have the permission to do this!"); // if author has no perms
