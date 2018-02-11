@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 
-client.User.setGame('|My owner working on me');
+client.user.setStatus('My owner working on me')
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
