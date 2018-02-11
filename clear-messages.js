@@ -53,4 +53,18 @@ bot.on('ready', () => {
   });
 });
 
+bot.on('message', message => {
+  // if the message is "ping",
+  if (message.content === 'ping') {
+    // send "pong" to the same channel.
+    message.channel.sendMessage(':ping_pong:  pong');
+  }
+});
+bot.on('ready', () => {
+  console.log('Stats is Ready!');
+  bot.setStatus('Online');
+  bot.setGame('GAME HERE');
+  
+});
+
 bot.login(process.env.BOT_TOKEN);
