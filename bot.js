@@ -5,7 +5,7 @@ bot.on('ready', () => {
     console.log('I am ready!');
     
 bot.on('Game Ready', () => {
-  clientt.user.setGame('My onwer working on me')
+  bot.user.setGame('My onwer working on me')
 })
 
 bot.on('message', message => {
