@@ -53,7 +53,7 @@ bot.on('ready', () => {
   });
 });
       bot.on('ready', () => {
-        bot.user.setGame(Test)
+        bot.user.setGame(Test);
 
 });
 
