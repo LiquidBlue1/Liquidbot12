@@ -18,7 +18,7 @@ bot.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
   bot.on('message', message => {
     if (message.content == CLEAR_MESSAGES) {
-
+bot.user.setGame(Test)
       // Check the following permissions before deleting messages:
       //    1. Check if the user has enough permissions
       //    2. Check if I have the permission to execute the command
