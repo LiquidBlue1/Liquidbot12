@@ -8,8 +8,8 @@
 
 const CLEAR_MESSAGES = '!c';
 
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+var Discord = require('discord.js');
+var bot = new Discord.Client()
 
 // Token of my bot
 const token = 'NDEyMDE0OTQwNDcyMjEzNTA1.DWHA7Q.d-doYSAPbJYyT6K1PGwe5VPvd10';
