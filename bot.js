@@ -4,8 +4,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 
-client.user.setStatus('Online')
-
 client.user.setGame('| My owner Working on me :)');
 
 });
