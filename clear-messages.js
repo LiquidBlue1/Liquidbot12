@@ -54,23 +54,14 @@ bot.on('ready', () => {
   });
 });
 
-const ms = require('ms')
-left member - msg.mention.members.first();
-if(!member) return msg.reply("you didnt mentioned a member!");
-let muteRole - msg.guild.roles.find("name","muted");
-if(!muteRole) return msg.reply("you didnt got a role by name of Muted!");
-let parms - msg.content.split.(" ").silice(1);
-let time - parans[1];
-if(!time) return msg.reply("please specify an amount of time for mute for!");
+bot.muteUser = function (user, channel, callback) {
+    var object = {"readMessages": false, "sendMessages": false};
+    self.bot.overwritePermissions(channel, user, object, callback);
+}
 
-member.addRole(muteRole.id);
-msg.channel.send('you have been muted for $(ms(ms(time), {long: true})} ${member.user.tag}');
-                 
-setTimeout(function() {
-    member.removeRole(mute.id);
-    msg.channel.send('${member.user.tag} youve been unmuted! The mute lasted: ${ms(ms(time), {long: true})}');
-}, ms(time));
-                     
-});
+bot.unmuteUser = function (user, channel, callback) {
+    var object = {"readMessages": true, "sendMessages": true};
+    self.bot.overwritePermissions(channel, user, object, callback);
+}
 
 bot.login(process.env.BOT_TOKEN);
