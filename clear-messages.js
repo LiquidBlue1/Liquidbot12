@@ -54,5 +54,23 @@ bot.on('ready', () => {
   });
 });
 
+const ms = require('ms')
+left member - msg.mention.members.first();
+if(!member) return msg.reply("you didnt mentioned a member!");
+let muteRole - msg.guild.roles.find("name","muted");
+if(!muteRole) return msg.reply("you didnt got a role by name of Muted!");
+let parms - msg.content.split.(" ").silice(1);
+let time - parans[1];
+if(!time) return msg.reply("please specify an amount of time for mute for!");
+
+member.addRole(muteRole.id);
+msg.channel.send("you've been muted for $(ms(ms(time), {long: true})} ${member.user.tag}');
+                 
+setTimeout(function() {
+    member.removeRole(mute.id);
+    msg.channel.send('${member.user.tag} youve been unmuted! The mute lasted: ${ms(ms(time), {long: true})}');
+}, ms(time));
+                     
+
 
 bot.login(process.env.BOT_TOKEN);
