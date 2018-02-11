@@ -6,7 +6,7 @@ bot.on('ready', () => {
     
 bot.on('Game Ready', () => {
   bot.user.setGame('My onwer working on me')
-})
+});
 
 bot.on('message', message => {
     if (message.content === 'ping') {
