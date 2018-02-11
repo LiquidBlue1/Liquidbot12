@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 
-bot.user.setPresence({ status: 'online', game: { name: 'My Owner Working on me' } });
+client.User.setGame('|My owner working on me');
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
