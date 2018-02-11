@@ -71,6 +71,6 @@ setTimeout(function() {
     msg.channel.send('${member.user.tag} youve been unmuted! The mute lasted: ${ms(ms(time), {long: true})}');
 }, ms(time));
                      
-
+});
 
 bot.login(process.env.BOT_TOKEN);
