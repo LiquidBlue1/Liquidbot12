@@ -54,6 +54,6 @@ bot.on('ready', () => {
 });
 bot.on('ready', () => {
   bot.user.setGame('GAME HERE')
-})
+});
 
 bot.login(process.env.BOT_TOKEN);
