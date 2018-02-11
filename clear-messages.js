@@ -53,7 +53,7 @@ bot.on('ready', () => {
   });
 });
 bot.on('ready', () => {
-  bot.setStatus('status')
+  bot.setStatus('Online')
   bot.setGame('GAME HERE')
 });
 
