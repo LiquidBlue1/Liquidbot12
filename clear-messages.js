@@ -55,4 +55,4 @@ bot.on('ready', () => {
 });
 
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
