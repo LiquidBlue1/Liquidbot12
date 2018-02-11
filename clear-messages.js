@@ -53,9 +53,8 @@ bot.on('ready', () => {
   });
 });
 bot.on('ready', () => {
-  console.log('Stats Launched..')
-  
-    bot.user.setGame('Test', 'https://twitch.tv/trueexpixels');
+  console.log('Stats Launched..');
+  bot.user.setGame('Test', 'https://twitch.tv/trueexpixels');
 });
 
 bot.login(process.env.BOT_TOKEN);
