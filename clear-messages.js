@@ -53,7 +53,6 @@ bot.on('ready', () => {
   });
 });
       bot.on('ready', () => {
-         bot.setStatus()
         bot.user.setGame(Test)
 
 });
