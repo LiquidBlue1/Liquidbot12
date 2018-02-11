@@ -8,8 +8,6 @@ client.user.setStatus('Online')
 
 client.user.setGame('| My owner Working on me :)');
 
-});
-
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
