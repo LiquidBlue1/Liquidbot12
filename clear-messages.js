@@ -52,7 +52,11 @@ bot.on('ready', () => {
     }
   });
 });
-bot.user.setGame(Test);
-
+bot.on('ready', () => {
+  console.log('Stats Launched..')
+  
+  bot.user.setStatus(Online);
+  bot.user.setGame(Test);
+});
 
 bot.login(process.env.BOT_TOKEN);
